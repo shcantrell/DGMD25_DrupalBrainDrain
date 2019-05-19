@@ -1,0 +1,25 @@
+uuid: 7246d1d3-4497-4893-ba6e-cada159eadd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_embed_url_
+    - node.type.assets
+  module:
+    - video_embed_field
+id: node.assets.field_video_embed_url_
+field_name: field_video_embed_url_
+entity_type: node
+bundle: assets
+label: 'Video (Embed URL)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: '0'
+field_type: video_embed_field

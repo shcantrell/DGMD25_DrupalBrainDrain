@@ -1,8 +1,9 @@
-uuid: b83ea4d9-074c-47ae-b465-5cd0e13006bf
+uuid: 39449ee2-0775-4b32-8649-f21178eaa528
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.assets.body
     - field.field.node.assets.field_asset_type
     - field.field.node.assets.field_clientele
@@ -19,28 +20,20 @@ dependencies:
     - text
     - user
     - video_embed_field
-id: node.assets.default
+id: node.assets.full
 targetEntityType: node
 bundle: assets
-mode: default
+mode: full
 content:
   body:
     label: hidden
     type: text_default
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_asset_type:
-    weight: 1
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_clientele:
-    weight: 0
+    weight: 4
     label: hidden
     settings:
       link: true
@@ -48,25 +41,16 @@ content:
     type: entity_reference_label
     region: content
   field_documents:
-    weight: 4
+    type: file_default
+    weight: 1
+    region: content
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
-    region: content
-  field_image_upload:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_portfolio_image_upload:
-    weight: 8
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -74,7 +58,7 @@ content:
     type: image
     region: content
   field_project_type:
-    weight: 2
+    weight: 5
     label: hidden
     settings:
       link: true
@@ -82,14 +66,14 @@ content:
     type: entity_reference_label
     region: content
   field_url_link:
-    weight: 6
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_video_embed_url_:
-    weight: 5
+    weight: 2
     label: hidden
     settings:
       responsive: true
@@ -100,4 +84,6 @@ content:
     type: video_embed_field_video
     region: content
 hidden:
+  field_asset_type: true
+  field_image_upload: true
   links: true

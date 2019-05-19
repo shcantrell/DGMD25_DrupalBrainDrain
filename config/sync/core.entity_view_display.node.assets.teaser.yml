@@ -5,26 +5,39 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.assets.body
+    - field.field.node.assets.field_asset_type
+    - field.field.node.assets.field_clientele
+    - field.field.node.assets.field_documents
+    - field.field.node.assets.field_image_upload
+    - field.field.node.assets.field_portfolio_image_upload
+    - field.field.node.assets.field_project_type
+    - field.field.node.assets.field_url_link
+    - field.field.node.assets.field_video_embed_url_
     - node.type.assets
   module:
-    - text
+    - image
     - user
 id: node.assets.teaser
 targetEntityType: node
 bundle: assets
 mode: teaser
 content:
-  body:
+  field_image_upload:
+    type: image
+    weight: 0
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      image_style: ''
+      image_link: content
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_asset_type: true
+  field_clientele: true
+  field_documents: true
+  field_portfolio_image_upload: true
+  field_project_type: true
+  field_url_link: true
+  field_video_embed_url_: true
+  links: true

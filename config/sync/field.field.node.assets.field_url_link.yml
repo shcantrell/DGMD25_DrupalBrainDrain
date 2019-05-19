@@ -1,0 +1,21 @@
+uuid: 8c1a1ffb-2c58-4a4b-a239-5af5bbcd4b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_link
+    - node.type.assets
+  module:
+    - text
+id: node.assets.field_url_link
+field_name: field_url_link
+entity_type: node
+bundle: assets
+label: 'URL Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

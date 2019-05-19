@@ -9,7 +9,7 @@ _core:
 id: dgmde25_page_title
 theme: dgmde25
 region: content
-weight: -50
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

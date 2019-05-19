@@ -1,17 +1,17 @@
-uuid: 3bbdb28f-11dd-40d4-b851-294eabcb3322
+uuid: eff82e52-1d2e-48ef-a20a-48c910d7b198
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_upload
+    - field.storage.node.field_portfolio_image_upload
     - node.type.assets
   module:
     - image
-id: node.assets.field_image_upload
-field_name: field_image_upload
+id: node.assets.field_portfolio_image_upload
+field_name: field_portfolio_image_upload
 entity_type: node
 bundle: assets
-label: 'Thumbnail Image Upload'
+label: 'Portfolio Image Upload'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   file_directory: images
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 4MB
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true

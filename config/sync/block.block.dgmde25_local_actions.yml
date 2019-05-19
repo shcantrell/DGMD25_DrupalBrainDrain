@@ -9,7 +9,7 @@ _core:
 id: dgmde25_local_actions
 theme: dgmde25
 region: content
-weight: -20
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:
