@@ -24,6 +24,8 @@
         "drupal/core": "^8.7.0",
         "drupal/entity_clone": "^1.0@beta",
         "drupal/iframe": "^1.9",
+        "drupal/imce": "^1.7",
+        "drupal/pathauto": "^1.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
