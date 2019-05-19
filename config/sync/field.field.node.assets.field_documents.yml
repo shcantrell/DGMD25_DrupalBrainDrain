@@ -1,0 +1,27 @@
+uuid: 598ee8a6-d351-440c-9bb8-f8564475e0bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documents
+    - node.type.assets
+  module:
+    - file
+id: node.assets.field_documents
+field_name: field_documents
+entity_type: node
+bundle: assets
+label: Documents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documents
+  file_extensions: 'txt pdf docx xlsx doc'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

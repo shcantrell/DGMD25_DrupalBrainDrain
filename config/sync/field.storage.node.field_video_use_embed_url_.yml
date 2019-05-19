@@ -1,0 +1,19 @@
+uuid: d4c963b1-76b5-4a16-b83f-e44f4c801722
+langcode: en
+status: true
+dependencies:
+  module:
+    - iframe
+    - node
+id: node.field_video_use_embed_url_
+field_name: field_video_use_embed_url_
+entity_type: node
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 7efdb07c-e55a-4ddb-82f2-b810a183d19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_use_embed_url_
+    - node.type.assets
+  module:
+    - iframe
+id: node.assets.field_video_use_embed_url_
+field_name: field_video_use_embed_url_
+entity_type: node
+bundle: assets
+label: 'Video (use embed url)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: auto
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

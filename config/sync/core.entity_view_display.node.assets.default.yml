@@ -1,0 +1,91 @@
+uuid: b83ea4d9-074c-47ae-b465-5cd0e13006bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.assets.body
+    - field.field.node.assets.field_asset_type
+    - field.field.node.assets.field_clientele
+    - field.field.node.assets.field_documents
+    - field.field.node.assets.field_image_upload
+    - field.field.node.assets.field_project_type
+    - field.field.node.assets.field_video_use_embed_url_
+    - node.type.assets
+  module:
+    - file
+    - iframe
+    - image
+    - text
+    - user
+id: node.assets.default
+targetEntityType: node
+bundle: assets
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_asset_type:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_clientele:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_documents:
+    weight: 4
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_image_upload:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_project_type:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_video_use_embed_url_:
+    weight: 5
+    label: hidden
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_default
+    region: content
+hidden:
+  links: true

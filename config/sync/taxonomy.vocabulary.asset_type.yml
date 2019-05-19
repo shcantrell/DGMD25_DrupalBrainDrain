@@ -1,0 +1,8 @@
+uuid: 22b3725b-daf4-4221-9bf6-7d239670f085
+langcode: en
+status: true
+dependencies: {  }
+name: 'Asset Type'
+vid: asset_type
+description: ''
+weight: 0

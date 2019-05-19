@@ -1,0 +1,8 @@
+uuid: f50bbdda-13d3-4548-a4cd-c2418ef011ad
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Type'
+vid: project_type
+description: ''
+weight: 0
