@@ -9,12 +9,10 @@ dependencies:
     - field.field.node.assets.field_documents
     - field.field.node.assets.field_image_upload
     - field.field.node.assets.field_project_type
-    - field.field.node.assets.field_video_use_embed_url_
     - image.style.thumbnail
     - node.type.assets
   module:
     - file
-    - iframe
     - image
     - path
     - text
@@ -70,22 +68,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_video_use_embed_url_:
-    weight: 6
-    settings:
-      url: ''
-      title: ''
-      width: ''
-      height: ''
-      class: ''
-      expose_class: ''
-      frameborder: 0
-      scrolling: ''
-      transparency: 0
-      tokensupport: 0
-    third_party_settings: {  }
-    type: iframe_urlwidthheight
     region: content
   path:
     type: path

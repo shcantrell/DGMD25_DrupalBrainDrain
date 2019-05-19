@@ -9,11 +9,9 @@ dependencies:
     - field.field.node.assets.field_documents
     - field.field.node.assets.field_image_upload
     - field.field.node.assets.field_project_type
-    - field.field.node.assets.field_video_use_embed_url_
     - node.type.assets
   module:
     - file
-    - iframe
     - image
     - text
     - user
@@ -69,23 +67,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_video_use_embed_url_:
-    weight: 5
-    label: hidden
-    settings:
-      url: ''
-      title: ''
-      width: ''
-      height: ''
-      class: ''
-      expose_class: ''
-      frameborder: '0'
-      scrolling: auto
-      transparency: '0'
-      tokensupport: '0'
-    third_party_settings: {  }
-    type: iframe_default
     region: content
 hidden:
   links: true
