@@ -1,0 +1,14 @@
+uuid: ea6c1c65-ddaf-4c68-8749-a836a5d9916b
+name: TheDrupalBrainDrain
+mail: susan@shcantrell.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

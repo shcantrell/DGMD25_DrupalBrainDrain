@@ -1,0 +1,22 @@
+uuid: 8fcd0ad0-4a23-47aa-aff8-752776656c14
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - dgmde25
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: dgmde25_search
+theme: dgmde25
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
