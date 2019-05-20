@@ -23,23 +23,28 @@ main {
     margin-left: -1em;
 }
 .layout-container {
-    margin: 5em 10em;
+    margin: 5em 5em 5em 7em;
 }
-.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content {
+.view-content {
     float: left;
-    width:75%;
     display:inline-block;
+    width: 80%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
-.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content .views-row img {
+.view-content .views-row img {
     float: left;
+    display: inline-block;
     padding: 1em 1em;
+    margin: 0 0 0 0;
 }
-.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content .views-row img:hover {
+.view-content img:hover {
   opacity: 0.3;
 }
 .region-sidebar-second {
-    width:19%;
     float: right;
+    position: relative;
+    left: -5.5em;
+    width: 15%;
     line-height: 2em;
-    overflow-wrap: break-word;
 }
