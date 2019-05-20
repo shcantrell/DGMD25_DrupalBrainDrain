@@ -13,6 +13,9 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  ds: 0
+  ds_extras: 0
+  ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
   entity_clone: 0
@@ -25,6 +28,7 @@ module:
   iframe: 0
   image: 0
   imce: 0
+  layout_discovery: 0
   link: 0
   menu_ui: 0
   node: 0

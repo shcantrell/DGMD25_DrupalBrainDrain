@@ -14,11 +14,49 @@ dependencies:
     - field.field.node.assets.field_video_embed_url_
     - node.type.assets
   module:
+    - ds
     - file
     - image
     - text
     - user
     - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_clientele
+        - field_project_type
+        - field_image_upload
+        - field_portfolio_image_upload
+        - field_documents
+        - field_video_embed_url_
+        - field_url_link
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
 id: node.assets.default
 targetEntityType: node
 bundle: assets
@@ -27,69 +65,63 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_asset_type:
+    region: ds_content
+  field_clientele:
     weight: 1
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_clientele:
-    weight: 0
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
+    region: ds_content
   field_documents:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    region: content
+    region: ds_content
   field_image_upload:
     weight: 3
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
-    region: content
+    region: ds_content
   field_portfolio_image_upload:
-    weight: 8
-    label: above
+    weight: 4
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: ds_content
   field_project_type:
     weight: 2
     label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_url_link:
-    weight: 6
+    weight: 7
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_video_embed_url_:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       responsive: true
@@ -98,6 +130,7 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
-    region: content
+    region: ds_content
 hidden:
+  field_asset_type: true
   links: true

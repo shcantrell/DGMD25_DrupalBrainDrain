@@ -1,9 +1,9 @@
-uuid: 39449ee2-0775-4b32-8649-f21178eaa528
+uuid: 76c1ba06-e603-44f3-bdd2-6b425048b508
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.search_result
     - field.field.node.assets.body
     - field.field.node.assets.field_asset_type
     - field.field.node.assets.field_clientele
@@ -46,7 +46,6 @@ third_party_settings:
         - field_video_embed_url_
         - field_url_link
         - body
-        - field_project_type
     fields:
       node_title:
         plugin_id: node_title
@@ -57,10 +56,10 @@ third_party_settings:
           wrapper: h2
           class: ''
           link: false
-id: node.assets.full
+id: node.assets.search_result
 targetEntityType: node
 bundle: assets
-mode: full
+mode: search_result
 content:
   body:
     label: hidden
@@ -73,18 +72,18 @@ content:
     weight: 1
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
   field_documents:
-    type: file_default
     weight: 3
-    region: ds_content
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    type: file_default
+    region: ds_content
   field_portfolio_image_upload:
     weight: 2
     label: hidden
@@ -94,13 +93,6 @@ content:
     third_party_settings: {  }
     type: image
     region: ds_content
-  field_project_type:
-    type: entity_reference_entity_id
-    weight: 7
-    region: ds_content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_url_link:
     weight: 5
     label: hidden
@@ -122,4 +114,5 @@ content:
 hidden:
   field_asset_type: true
   field_image_upload: true
+  field_project_type: true
   links: true
