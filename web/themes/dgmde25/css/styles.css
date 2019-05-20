@@ -1,15 +1,45 @@
-body{background-color:#fff;}
-
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web&display=swap);
+body{
+  background-color:#fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3em;
+  color: #333a44:}
+a {
+    text-decoration: none;
+    color: #333a44;
+}
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+.view-content {
+    border-color: 1px solid blue;
+}
+.region-header {
+    margin: 0 0 0 1em;
+}
+#block-dgmde25-branding img {
+    width: 20em;
+    margin-left: -1em;
+}
 .layout-container {
     margin: 5em 10em;
 }
-.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region {
-    width: auto:
+.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content {
+    float: left;
+    width:75%;
+    display:inline-block;
 }
 .path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content .views-row img {
     float: left;
-    margin: 1em 1em;
+    padding: 1em 1em;
 }
-img:hover {
-    opacity: .3;
+.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content .views-row img:hover {
+  opacity: 0.3;
+}
+.region-sidebar-second {
+    width:19%;
+    float: right;
+    line-height: 2em;
+    overflow-wrap: break-word;
 }
