@@ -15,9 +15,7 @@ dependencies:
     - node.type.assets
   module:
     - ds
-    - file
     - image
-    - text
     - user
     - video_embed_field
 third_party_settings:
@@ -40,13 +38,8 @@ third_party_settings:
       ds_content:
         - node_title
         - field_clientele
-        - field_project_type
-        - field_image_upload
         - field_portfolio_image_upload
-        - field_documents
         - field_video_embed_url_
-        - field_url_link
-        - body
     fields:
       node_title:
         plugin_id: node_title
@@ -62,13 +55,6 @@ targetEntityType: node
 bundle: assets
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    region: ds_content
   field_clientele:
     weight: 1
     label: hidden
@@ -77,25 +63,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-  field_documents:
-    weight: 5
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
-    region: ds_content
-  field_image_upload:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: content
-    third_party_settings: {  }
-    type: image
-    region: ds_content
   field_portfolio_image_upload:
-    weight: 4
+    weight: 2
     label: hidden
     settings:
       image_style: ''
@@ -103,25 +72,8 @@ content:
     third_party_settings: {  }
     type: image
     region: ds_content
-  field_project_type:
-    weight: 2
-    label: hidden
-    settings:
-      link: false
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    type: entity_reference_label
-    region: ds_content
-  field_url_link:
-    weight: 7
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
   field_video_embed_url_:
-    weight: 6
+    weight: 3
     label: hidden
     settings:
       responsive: true
@@ -132,5 +84,10 @@ content:
     type: video_embed_field_video
     region: ds_content
 hidden:
+  body: true
   field_asset_type: true
+  field_documents: true
+  field_image_upload: true
+  field_project_type: true
+  field_url_link: true
   links: true

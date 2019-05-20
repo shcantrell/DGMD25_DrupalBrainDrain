@@ -16,9 +16,7 @@ dependencies:
     - node.type.assets
   module:
     - ds
-    - file
     - image
-    - text
     - user
     - video_embed_field
 third_party_settings:
@@ -42,10 +40,7 @@ third_party_settings:
         - node_title
         - field_clientele
         - field_portfolio_image_upload
-        - field_documents
         - field_video_embed_url_
-        - field_url_link
-        - body
     fields:
       node_title:
         plugin_id: node_title
@@ -61,13 +56,6 @@ targetEntityType: node
 bundle: assets
 mode: search_result
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    region: ds_content
   field_clientele:
     weight: 1
     label: hidden
@@ -75,14 +63,6 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: ds_content
-  field_documents:
-    weight: 3
-    label: hidden
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    type: file_default
     region: ds_content
   field_portfolio_image_upload:
     weight: 2
@@ -93,26 +73,20 @@ content:
     third_party_settings: {  }
     type: image
     region: ds_content
-  field_url_link:
-    weight: 5
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
   field_video_embed_url_:
-    weight: 4
+    type: video_embed_field_thumbnail
+    weight: 3
+    region: ds_content
     label: hidden
     settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: true
+      image_style: ''
+      link_image_to: ''
     third_party_settings: {  }
-    type: video_embed_field_video
-    region: ds_content
 hidden:
+  body: true
   field_asset_type: true
+  field_documents: true
   field_image_upload: true
   field_project_type: true
+  field_url_link: true
   links: true

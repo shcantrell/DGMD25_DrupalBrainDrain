@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_upload
+    - field.storage.node.field_portfolio_image_upload
   module:
     - image
     - node
@@ -251,10 +251,10 @@ display:
       empty: {  }
       relationships: {  }
       fields:
-        field_image_upload:
-          id: field_image_upload
-          table: node__field_image_upload
-          field: field_image_upload
+        field_portfolio_image_upload:
+          id: field_portfolio_image_upload
+          table: node__field_portfolio_image_upload
+          field: field_portfolio_image_upload
           relationship: none
           group_type: group
           admin_label: ''
@@ -297,7 +297,7 @@ display:
           element_default_classes: true
           empty: ''
           hide_empty: true
-          empty_zero: false
+          empty_zero: true
           hide_alter_empty: true
           click_sort_column: target_id
           type: image
@@ -328,7 +328,7 @@ display:
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.node.field_image_upload'
+        - 'config:field.storage.node.field_portfolio_image_upload'
   feed_1:
     id: feed_1
     display_title: Feed
@@ -369,7 +369,7 @@ display:
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.node.field_image_upload'
+        - 'config:field.storage.node.field_portfolio_image_upload'
   page_1:
     id: page_1
     display_title: Page
@@ -391,4 +391,4 @@ display:
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.node.field_image_upload'
+        - 'config:field.storage.node.field_portfolio_image_upload'
