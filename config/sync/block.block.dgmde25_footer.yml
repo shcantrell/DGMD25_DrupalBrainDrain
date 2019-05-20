@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: dgmde25_footer
 theme: dgmde25
-region: footer_first
+region: featured_bottom_first
 weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
