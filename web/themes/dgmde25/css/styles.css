@@ -1,6 +1,15 @@
-/* NEW CODE STARTS HERE */
-/* NEW CODE STARTS HERE */
+body{background-color:#fff;}
 
-body {
-  background-color: #fff;
+.layout-container {
+    margin: 5em 10em;
+}
+.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region {
+    width: auto:
+}
+.path-frontpage .dialog-off-canvas-main-canvas .layout-container .layout-content .region .views-element-container .view-portfolio .view-content .views-row img {
+    float: left;
+    margin: 1em 1em;
+}
+img:hover {
+    opacity: .3;
 }
