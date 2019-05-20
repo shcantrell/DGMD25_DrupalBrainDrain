@@ -1,9 +1,14 @@
+
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web&display=swap);
 body{
   background-color:#fff;
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.3em;
-  color: #333a44:}
+  color: #333a44;
+}
+h1, h2, h3 {
+   font-size: 1.3em;
+}
 a {
     text-decoration: none;
     color: #333a44;
@@ -11,9 +16,6 @@ a {
 main {
     margin: 0 auto;
     width: 100%;
-}
-.view-content {
-    border-color: 1px solid blue;
 }
 .region-header {
     margin: 0 0 0 1em;
@@ -29,8 +31,6 @@ main {
     float: left;
     display:inline-block;
     width: 80%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
 }
 .view-content .views-row img {
     float: left;
@@ -47,4 +47,13 @@ main {
     left: -5.5em;
     width: 15%;
     line-height: 2em;
+}
+.page-node-type-assets .layout-content {
+    float: left;
+    width: 70%;
+    padding: 1em;
+ }
+.page-node-type-assets .layout-content img {
+    height: 30em;
+    width: auto;
 }
