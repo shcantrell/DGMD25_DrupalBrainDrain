@@ -21,8 +21,22 @@ main {
     margin: 0 0 0 1em;
 }
 #block-dgmde25-branding img {
-    width: 15em;
+    width: 13em;
     margin-left: -1em;
+}
+#block-dgmde25-content {
+    float: left;
+}
+#block-dgmde25-content .views-element-container .view-taxonomy-term .view-content .views-view-grid .views-row .views-col img {
+    max-width: 40em;
+    height: auto;
+    margin: 1em;
+    padding: 0;
+}
+#block-dgmde25-content .views-element-container .view-taxonomy-term .view-content .views-view-grid .views-row .views-col {
+     max-width: 80em;
+     clear: both;
+     margin-right: 5em;
 }
 .layout-container {
     margin: 5em 5em 5em 7em;
